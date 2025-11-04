@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- START SCREEN -->
+    <div class="container" id="start-screen">
+        <h1>Quiz App</h1>
+
+        <div class="form-group">
+            <label for="question-count">Number of Questions:</label>
+            <input type="number" id="question-count" min="1" max="10" value="5" />
+        </div>
+
+        <div class="form-group">
+            <label for="difficulty">Select Difficulty:</label>
+            <select name="difficulty" id="difficulty">
+                <option value="select" disabled selected>Select Difficulty</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+
+        <button id="start-btn" class="btn">Start Quiz</button>   
+    </div>
+
+    <!-- QUIZ SCREEN -->
+    <div class="container hide" id="quiz-screen">
+        <div id="progress-bar">
+            <div id="progress">
+                Question 3 <span>/ 5</span>
+            </div>
+        </div>
+
+        <div id="question-container">
+            <h2 id="question-text">
+                Who invented Computer?
+            </h2>
+            <div id="options-container" class="options-container">
+                <!-- Answer buttons will be generated here -->
+            </div>
+        </div>
+
+        <button id="next-btn" class="btn" disabled>Next Question</button>
+    </div>
+
+    <!-- RESULT SCREEN -->
+    <div class="container hidden" id="result-screen">
+        <h1>Quiz App</h1>
+
+        <div class="score-details">
+            <h2 id="score-text">You Scored :</h2>
+            <p id="total-score">0 / 5</p>
+        </div>
+
+        <button id="restart-btn" class="btn">Restart Quiz</button>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
