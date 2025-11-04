@@ -24,12 +24,12 @@ The app dynamically loads questions, tracks scores, and shows the correct answer
 ---
 
 ## 📂 Project Structure
-quiz-app/
-│
-├── index.html # Main HTML file
-├── style.css # Styling file
-├── script.js # JavaScript logic
-├── README.md # Project documentation
+- quiz-app/
+- │
+- ├── index.html # Main HTML file
+- ├── style.css # Styling file
+- ├── script.js # JavaScript logic
+- ├── README.md # Project documentation
 
 ---
 
